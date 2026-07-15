@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-07-15 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sync_type",
+  "device_name",
+  "status",
+  "column_break_log1",
+  "window_start",
+  "window_end",
+  "duration_seconds",
+  "section_break_counts",
+  "fetched",
+  "created",
+  "skipped",
+  "column_break_counts",
+  "errors",
+  "routed_to_review",
+  "section_break_detail",
+  "detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "sync_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sync Type",
+   "options": "Scheduled\nManual\nBackfill"
+  },
+  {
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Device"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Success\nCompleted with Errors\nFailed"
+  },
+  {
+   "fieldname": "column_break_log1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "window_start",
+   "fieldtype": "Datetime",
+   "label": "Window Start"
+  },
+  {
+   "fieldname": "window_end",
+   "fieldtype": "Datetime",
+   "label": "Window End"
+  },
+  {
+   "fieldname": "duration_seconds",
+   "fieldtype": "Float",
+   "label": "Duration (s)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_counts",
+   "fieldtype": "Section Break",
+   "label": "Counts"
+  },
+  {
+   "fieldname": "fetched",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Fetched"
+  },
+  {
+   "fieldname": "created",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Created"
+  },
+  {
+   "fieldname": "skipped",
+   "fieldtype": "Int",
+   "label": "Already Present"
+  },
+  {
+   "fieldname": "column_break_counts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "errors",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Errors"
+  },
+  {
+   "fieldname": "routed_to_review",
+   "fieldtype": "Int",
+   "label": "Routed to Review"
+  },
+  {
+   "fieldname": "section_break_detail",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "detail",
+   "fieldtype": "Small Text",
+   "label": "Detail / Error Samples"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-15 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZKTeco Checkin Sync",
+ "name": "ZKTeco Sync Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager"
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

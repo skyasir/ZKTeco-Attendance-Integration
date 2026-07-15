@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-15 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "device_name",
+  "enabled",
+  "column_break_dev1",
+  "server_ip",
+  "server_port",
+  "section_break_auth",
+  "username",
+  "password",
+  "column_break_auth",
+  "token",
+  "section_break_state",
+  "last_sync",
+  "column_break_state",
+  "total_synced_records"
+ ],
+ "fields": [
+  {
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Device Name",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "column_break_dev1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "server_ip",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Server IP",
+   "reqd": 1
+  },
+  {
+   "fieldname": "server_port",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Server Port",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_auth",
+   "fieldtype": "Section Break",
+   "label": "Credentials"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password"
+  },
+  {
+   "fieldname": "column_break_auth",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "Token"
+  },
+  {
+   "fieldname": "section_break_state",
+   "fieldtype": "Section Break",
+   "label": "Sync State"
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Sync (this device)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_state",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_synced_records",
+   "fieldtype": "Int",
+   "label": "Total Synced Records",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-15 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZKTeco Checkin Sync",
+ "name": "ZKTeco Device",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
