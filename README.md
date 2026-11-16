@@ -1,5 +1,15 @@
 # ZKTeco Checkin Sync - Installation & Setup Guide
 
+## Screenshots
+
+![ZKTeco Config: device credentials, server and sync frequency](docs/screenshots/zkteco-config.png)
+*ZKTeco Config: device credentials, server and sync frequency*
+
+![Employee Checkins created from the device](docs/screenshots/zkteco-checkins.png)
+*Employee Checkins created from the device*
+
+Recorded on a demo site with made-up data.
+
 ## Overview
 This Frappe/ERPNext app automatically synchronizes employee check-in/check-out transactions from ZKTeco biometric devices with ERPNext Employee Checkin records.
 
